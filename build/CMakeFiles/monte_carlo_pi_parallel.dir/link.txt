@@ -1,1 +1,0 @@
-/usr/lib64/ccache/clang CMakeFiles/monte_carlo_pi_parallel.dir/monte_carlo_pi_parallel.c.o -o monte_carlo_pi_parallel  /usr/lib64/libomp.so /usr/lib64/libpthread.a

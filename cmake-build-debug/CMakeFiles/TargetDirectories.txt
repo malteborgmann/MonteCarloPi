@@ -1,3 +1,0 @@
-/Users/malteborgmann/CLionProjects/HPC/cmake-build-debug/CMakeFiles/HPC.dir
-/Users/malteborgmann/CLionProjects/HPC/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/malteborgmann/CLionProjects/HPC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

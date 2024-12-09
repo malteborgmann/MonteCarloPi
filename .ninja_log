@@ -1,4 +1,0 @@
-# ninja log v6
-2	178	1733733873009992461	build.ninja	8f9f7fdf104f123f
-3	216	1733733212327294174	CMakeFiles/HPC.dir/main.c.o	461fa50e4c03df98
-1	106	1733733911368782929	CMakeFiles/monte_carlo_pi_sequentiell.dir/monte_carlo_pi_sequentiell.c.o	c3a539c99377d036

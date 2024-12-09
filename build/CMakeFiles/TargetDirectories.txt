@@ -1,5 +1,0 @@
-/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/monte_carlo_pi_sequentiell.dir
-/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/monte_carlo_pi_parallel.dir
-/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/run_all.dir
-/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/edit_cache.dir
-/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/rebuild_cache.dir

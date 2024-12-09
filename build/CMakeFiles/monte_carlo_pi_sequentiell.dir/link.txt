@@ -1,1 +1,0 @@
-/usr/lib64/ccache/clang CMakeFiles/monte_carlo_pi_sequentiell.dir/monte_carlo_pi_sequentiell.c.o -o monte_carlo_pi_sequentiell
