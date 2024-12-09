@@ -1,0 +1,441 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Linux - 6.11.10-200.fc40.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/lib64/ccache/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/3.30.5/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5"
+      binary: "/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3cee9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3cee9.dir/build.make CMakeFiles/cmTC_3cee9.dir/build
+        gmake[1]: Entering directory '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5'
+        Building C object CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o
+        /usr/lib64/ccache/clang   -v -MD -MT CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        clang version 18.1.8 (Fedora 18.1.8-1.fc40)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg
+        System configuration file directory: /etc/clang/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/bin/clang-18" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5 -v -fcoverage-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5 -resource-dir /usr/bin/../lib/clang/18 -dependency-file CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/bin/../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/clang/18/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_3cee9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cee9.dir/link.txt --verbose=1
+        /usr/lib64/ccache/clang  -v -Wl,-v CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -o cmTC_3cee9
+        clang version 18.1.8 (Fedora 18.1.8-1.fc40)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg
+        System configuration file directory: /etc/clang/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3cee9 /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        GNU ld version 2.41-38.fc40
+        gmake[1]: Leaving directory '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/clang/18/include] ==> [/usr/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/clang/18/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3cee9/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3cee9.dir/build.make CMakeFiles/cmTC_3cee9.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5']
+        ignore line: [Building C object CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/lib64/ccache/clang   -v -MD -MT CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-1.fc40)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg]
+        ignore line: [System configuration file directory: /etc/clang/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/bin/clang-18" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5 -v -fcoverage-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-yvE9X5 -resource-dir /usr/bin/../lib/clang/18 -dependency-file CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/bin/../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_3cee9]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cee9.dir/link.txt --verbose=1]
+        ignore line: [/usr/lib64/ccache/clang  -v -Wl -v CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -o cmTC_3cee9]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-1.fc40)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg]
+        ignore line: [System configuration file directory: /etc/clang/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3cee9 /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3cee9] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
+          arg [-L/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> dir [/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_3cee9.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/14/crtend.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> [/usr/lib/gcc/x86_64-redhat-linux/14]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/14/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu;/usr/lib/gcc/x86_64-redhat-linux/14;/usr/lib64;/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.41-38.fc40
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:238 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU"
+      binary: "/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6368/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b6368.dir/build.make CMakeFiles/cmTC_b6368.dir/build
+        gmake[1]: Verzeichnis „/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU“ wird betreten
+        Building C object CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o
+        /usr/lib64/ccache/clang   -fopenmp=libomp -v -std=gnu99 -MD -MT CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -c /home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU/OpenMPTryFlag.c
+        clang version 18.1.8 (Fedora 18.1.8-1.fc40)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg
+        System configuration file directory: /etc/clang/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/bin/clang-18" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU -v -fcoverage-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU -resource-dir /usr/bin/../lib/clang/18 -dependency-file CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/bin/../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu99 -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -x c /home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU/OpenMPTryFlag.c
+        clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/clang/18/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_b6368
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6368.dir/link.txt --verbose=1
+        /usr/lib64/ccache/clang  -fopenmp=libomp -v CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -o cmTC_b6368  -v
+        clang version 18.1.8 (Fedora 18.1.8-1.fc40)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg
+        System configuration file directory: /etc/clang/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b6368 /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib64 -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        gmake[1]: Verzeichnis „/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU“ wird verlassen
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:282 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6368/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b6368.dir/build.make CMakeFiles/cmTC_b6368.dir/build]
+        ignore line: [gmake[1]: Verzeichnis „/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU“ wird betreten]
+        ignore line: [Building C object CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/lib64/ccache/clang   -fopenmp=libomp -v -std=gnu99 -MD -MT CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -c /home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU/OpenMPTryFlag.c]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-1.fc40)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg]
+        ignore line: [System configuration file directory: /etc/clang/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/bin/clang-18" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU -v -fcoverage-compilation-dir=/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU -resource-dir /usr/bin/../lib/clang/18 -dependency-file CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/bin/../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu99 -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -x c /home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-VJJnVU/OpenMPTryFlag.c]
+        ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_b6368]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6368.dir/link.txt --verbose=1]
+        ignore line: [/usr/lib64/ccache/clang  -fopenmp=libomp -v CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -o cmTC_b6368  -v]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-1.fc40)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang/x86_64-redhat-linux-gnu-clang.cfg]
+        ignore line: [System configuration file directory: /etc/clang/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b6368 /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib64 -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b6368] ==> ignore
+          arg [-L/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> dir [/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_b6368.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lomp] ==> lib [omp]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+        collapse library dir [/usr/bin/../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> [/usr/lib/gcc/x86_64-redhat-linux/14]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        implicit libs: [omp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu;/usr/lib/gcc/x86_64-redhat-linux/14;/usr/lib64;/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:440 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-Bn4pkr"
+      binary: "/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-Bn4pkr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-Bn4pkr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_76774/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_76774.dir/build.make CMakeFiles/cmTC_76774.dir/build
+        gmake[1]: Verzeichnis „/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-Bn4pkr“ wird betreten
+        Building C object CMakeFiles/cmTC_76774.dir/OpenMPCheckVersion.c.o
+        /usr/lib64/ccache/clang   -fopenmp=libomp -std=gnu99 -MD -MT CMakeFiles/cmTC_76774.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_76774.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_76774.dir/OpenMPCheckVersion.c.o -c /home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-Bn4pkr/OpenMPCheckVersion.c
+        Linking C executable cmTC_76774
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76774.dir/link.txt --verbose=1
+        /usr/lib64/ccache/clang  -fopenmp=libomp CMakeFiles/cmTC_76774.dir/OpenMPCheckVersion.c.o -o cmTC_76774
+        gmake[1]: Verzeichnis „/home/vw0rh2m/Projekte/MonteCarloPi/build/CMakeFiles/CMakeScratch/TryCompile-Bn4pkr“ wird verlassen
+        
+      exitCode: 0
+...
