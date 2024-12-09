@@ -27,8 +27,8 @@ endif()
 
 # Benutzerdefiniertes Ziel zum Ausführen beider Programme
 add_custom_target(run_all
-        COMMAND monte_carlo_pi_sequentiell 100000000
-        COMMAND monte_carlo_pi_parallel 100000000
+        COMMAND monte_carlo_pi_sequentiell 100000
+        COMMAND monte_carlo_pi_parallel 100000
         DEPENDS monte_carlo_pi_sequentiell monte_carlo_pi_parallel
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
         COMMENT "Führe beide Monte-Carlo Pi Simulationen aus..."
