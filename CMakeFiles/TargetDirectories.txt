@@ -1,0 +1,5 @@
+/Users/malteborgmann/CLionProjects/HPC/CMakeFiles/monte_carlo_pi_sequentiell.dir
+/Users/malteborgmann/CLionProjects/HPC/CMakeFiles/monte_carlo_pi_parallel.dir
+/Users/malteborgmann/CLionProjects/HPC/CMakeFiles/run_all.dir
+/Users/malteborgmann/CLionProjects/HPC/CMakeFiles/edit_cache.dir
+/Users/malteborgmann/CLionProjects/HPC/CMakeFiles/rebuild_cache.dir

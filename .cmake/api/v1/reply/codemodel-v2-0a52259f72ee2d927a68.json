@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MonteCarloPi",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "monte_carlo_pi_parallel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-monte_carlo_pi_parallel-Debug-bd4fc42c5c00ff30084e.json",
+					"name" : "monte_carlo_pi_parallel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "monte_carlo_pi_sequentiell::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-monte_carlo_pi_sequentiell-Debug-bc2466ef5b3ac12cda02.json",
+					"name" : "monte_carlo_pi_sequentiell",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run_all::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_all-Debug-8fc476c27febe1af8a51.json",
+					"name" : "run_all",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/malteborgmann/CLionProjects/HPC",
+		"source" : "/Users/malteborgmann/CLionProjects/HPC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
