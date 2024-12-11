@@ -106,6 +106,8 @@ dkms.conf
 
 build/
 .cmake/
+.idea/
+
 # CMake
 cmake-build-*/
 .cmake
