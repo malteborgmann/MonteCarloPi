@@ -104,6 +104,8 @@ dkms.conf
 # *.iml
 # *.ipr
 
+build/
+.cmake/
 # CMake
 cmake-build-*/
 .cmake
