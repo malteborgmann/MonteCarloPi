@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 
     long long num_points = atoll(argv[1]);
     if (num_points <= 0) {
-        printf("Anzahl Punkte.\n");
+        printf("Number of Points.\n");
         return 1;
     }
 
@@ -51,10 +51,12 @@ int main(int argc, char *argv[]) {
 
     double pi_estimate = 4.0 * ((double)points_inside_circle / (double)num_points);
 
-    printf("Punkte innerhalb des Kreises: %lld\n", points_inside_circle);
-    printf("Geschätzter Wert von π: %.10f\n", pi_estimate);
-    printf("Abweichung von tatsächlichem π: %.10f\n", fabs(M_PI - pi_estimate));
-    printf("Laufzeit: %.5f Sekunden\n", time_spent);
+    printf("---------------------------------------------\n");
+    printf("Number of points: %lld\n", num_points);
+    printf("Points within the circle: %lld\n", points_inside_circle);
+    printf("Estimated Value for π: %.10f\n", pi_estimate);
+    printf("Difference from actual π: %.10f\n", fabs(M_PI - pi_estimate));
+    printf("Runtime: %.5f \n", time_spent);
 
     return 0;
 }

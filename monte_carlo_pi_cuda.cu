@@ -7,7 +7,6 @@
 
 #define BLOCK_SIZE 256
 #define GRID_SIZE  256
-// Punkte pro Thread - kann an gewünschte Genauigkeit angepasst werden
 #define POINTS_PER_THREAD 10000
 
 __global__ void setup_kernel(curandState *state, unsigned long long seed) {
@@ -45,18 +44,15 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Anzahl Threads gesamt
+    
     int totalThreads = BLOCK_SIZE * GRID_SIZE;
-    // Berechne wie viele Punkte jeder Thread erzeugen soll
-    // Falls num_points nicht durch totalThreads teilbar ist, wird abgerundet.
+
     long long pointsPerThread = num_points / totalThreads;
     if (pointsPerThread <= 0) {
-        // Falls zu wenige Punkte für die gewählte Thread-Konfiguration:
-        // Einfach mindestens 1 Punkt pro Thread testen.
+
         pointsPerThread = 1;
     }
 
-    // Timer für Laufzeitmessung
     cudaEvent_t start, stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
@@ -92,12 +88,12 @@ int main(int argc, char *argv[]) {
 
     double pi_estimate = 4.0 * (double)h_countInside / (double)(pointsPerThread * totalThreads);
 
-    printf("Anzahl der Punkte: %lld\n", (long long)(pointsPerThread * totalThreads));
-    printf("Punkte innerhalb des Kreises: %llu\n", h_countInside);
-    printf("Geschätzter Wert von π: %.10f\n", pi_estimate);
-    printf("Abweichung von tatsächlichem π: %.10f\n", fabs(M_PI - pi_estimate));
-    // CUDA Event-Zeit ist in Millisekunden, Umrechnung in Sekunden
-    printf("Laufzeit: %.5f Sekunden\n", time_spent / 1000.0f);
+    printf("---------------------------------------------\n");
+    printf("Number of points: %lld\n", (long long)(pointsPerThread * totalThreads));
+    printf("Points within the circle: %llu\n", h_countInside);
+    printf("Estimated Value for π: %.10f\n", pi_estimate);
+    printf("Difference from actual π: %.10f\n", fabs(M_PI - pi_estimate));
+    printf("Runtime: %.5f Seconds\n", time_spent / 1000.0f);
 
     cudaFree(d_state);
     cudaFree(d_countInside);
