@@ -1,8 +1,10 @@
-# Mindestversion von CMake festlegen
 cmake_minimum_required(VERSION 3.10)
 
-# Projektname und Sprache
-project(MonteCarloPi C)
+# Projektname und Sprachen setzen (inkl. CUDA)
+project(MonteCarloPi C CUDA)
+
+# Hinzufügen der Unsupported-Compiler-Option für NVCC
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --allow-unsupported-compiler -ccbin /opt/f39/bin/g++")
 
 # C-Standard festlegen
 set(CMAKE_C_STANDARD 99)
@@ -25,11 +27,23 @@ else()
     message(WARNING "OpenMP wurde nicht gefunden. Die parallele Version wird möglicherweise nicht korrekt kompiliert.")
 endif()
 
-# Benutzerdefiniertes Ziel zum Ausführen beider Programme
+# CUDA-Version hinzufügen
+add_executable(monte_carlo_pi_cuda monte_carlo_pi_cuda.cu)
+target_link_libraries(monte_carlo_pi_cuda PRIVATE cudart curand)
+set_target_properties(monte_carlo_pi_cuda PROPERTIES 
+    CUDA_STANDARD 11 
+    CUDA_SEPARABLE_COMPILATION ON
+)
+
+# Variable für die Anzahl der Punkte definieren
+set(NUM_POINTS 1000000000 CACHE STRING "Anzahl der zu simulierenden Punkte")
+
+# Benutzerdefiniertes Ziel zum Ausführen aller Programme
 add_custom_target(run_all
-        COMMAND monte_carlo_pi_sequentiell 1000000000
-        COMMAND monte_carlo_pi_parallel 1000000000
-        DEPENDS monte_carlo_pi_sequentiell monte_carlo_pi_parallel
-        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-        COMMENT "Führe beide Monte-Carlo Pi Simulationen aus..."
+    COMMAND monte_carlo_pi_sequentiell ${NUM_POINTS}
+    COMMAND monte_carlo_pi_parallel ${NUM_POINTS}
+    COMMAND monte_carlo_pi_cuda ${NUM_POINTS}
+    DEPENDS monte_carlo_pi_sequentiell monte_carlo_pi_parallel monte_carlo_pi_cuda
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+    COMMENT "Führe alle Monte-Carlo Pi Simulationen aus..."
 )
